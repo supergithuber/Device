@@ -18,3 +18,14 @@ Device.type()
 ```
 
 recognize current device, it's iPhone, iPad, iPod... etc
+
+
+also 
+
+```
+Device.isiPad()
+Device.isiPod()
+Device.isiPhone()
+Device.isSimulator()
+Device.isRetina()
+```
