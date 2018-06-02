@@ -15,7 +15,34 @@
 		C7FE68C520C13B1B004D3C33 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE68C220C13B1B004D3C33 /* DeviceModel.swift */; };
 		C7FE68C620C13B1B004D3C33 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE68C320C13B1B004D3C33 /* Device.swift */; };
 		C7FE68C720C13B1B004D3C33 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE68C420C13B1B004D3C33 /* DeviceType.swift */; };
+		CC27FF6B20C253DD00574A04 /* Device.h in Headers */ = {isa = PBXBuildFile; fileRef = CC27FF6920C253DD00574A04 /* Device.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC27FF7420C2541A00574A04 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE68C220C13B1B004D3C33 /* DeviceModel.swift */; };
+		CC27FF7520C2541A00574A04 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE68C320C13B1B004D3C33 /* Device.swift */; };
+		CC27FF7620C2541A00574A04 /* DeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7FE68C420C13B1B004D3C33 /* DeviceType.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC27FF6C20C253DD00574A04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C7FE68A420C13B0F004D3C33 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC27FF6620C253DD00574A04;
+			remoteInfo = Device;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CC27FF7320C253DD00574A04 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		C7FE68AC20C13B0F004D3C33 /* WXDevice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXDevice.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -28,10 +55,20 @@
 		C7FE68C220C13B1B004D3C33 /* DeviceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 		C7FE68C320C13B1B004D3C33 /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		C7FE68C420C13B1B004D3C33 /* DeviceType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceType.swift; sourceTree = "<group>"; };
+		CC27FF6720C253DD00574A04 /* Device.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Device.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC27FF6920C253DD00574A04 /* Device.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		CC27FF6A20C253DD00574A04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C7FE68A920C13B0F004D3C33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC27FF6320C253DD00574A04 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -45,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FE68AE20C13B0F004D3C33 /* WXDevice */,
+				CC27FF6820C253DD00574A04 /* Device */,
 				C7FE68AD20C13B0F004D3C33 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				C7FE68AC20C13B0F004D3C33 /* WXDevice.app */,
+				CC27FF6720C253DD00574A04 /* Device.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +120,27 @@
 			path = Device;
 			sourceTree = "<group>";
 		};
+		CC27FF6820C253DD00574A04 /* Device */ = {
+			isa = PBXGroup;
+			children = (
+				CC27FF6920C253DD00574A04 /* Device.h */,
+				CC27FF6A20C253DD00574A04 /* Info.plist */,
+			);
+			path = Device;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC27FF6420C253DD00574A04 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC27FF6B20C253DD00574A04 /* Device.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		C7FE68AB20C13B0F004D3C33 /* WXDevice */ = {
@@ -91,15 +150,35 @@
 				C7FE68A820C13B0F004D3C33 /* Sources */,
 				C7FE68A920C13B0F004D3C33 /* Frameworks */,
 				C7FE68AA20C13B0F004D3C33 /* Resources */,
+				CC27FF7320C253DD00574A04 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CC27FF6D20C253DD00574A04 /* PBXTargetDependency */,
 			);
 			name = WXDevice;
 			productName = WXDevice;
 			productReference = C7FE68AC20C13B0F004D3C33 /* WXDevice.app */;
 			productType = "com.apple.product-type.application";
+		};
+		CC27FF6620C253DD00574A04 /* Device */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC27FF7220C253DD00574A04 /* Build configuration list for PBXNativeTarget "Device" */;
+			buildPhases = (
+				CC27FF6220C253DD00574A04 /* Sources */,
+				CC27FF6320C253DD00574A04 /* Frameworks */,
+				CC27FF6420C253DD00574A04 /* Headers */,
+				CC27FF6520C253DD00574A04 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Device;
+			productName = Device;
+			productReference = CC27FF6720C253DD00574A04 /* Device.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -113,6 +192,9 @@
 				TargetAttributes = {
 					C7FE68AB20C13B0F004D3C33 = {
 						CreatedOnToolsVersion = 9.3.1;
+					};
+					CC27FF6620C253DD00574A04 = {
+						CreatedOnToolsVersion = 9.3;
 					};
 				};
 			};
@@ -130,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				C7FE68AB20C13B0F004D3C33 /* WXDevice */,
+				CC27FF6620C253DD00574A04 /* Device */,
 			);
 		};
 /* End PBXProject section */
@@ -142,6 +225,13 @@
 				C7FE68BA20C13B0F004D3C33 /* LaunchScreen.storyboard in Resources */,
 				C7FE68B720C13B0F004D3C33 /* Assets.xcassets in Resources */,
 				C7FE68B520C13B0F004D3C33 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC27FF6520C253DD00574A04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,7 +250,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CC27FF6220C253DD00574A04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC27FF7420C2541A00574A04 /* DeviceModel.swift in Sources */,
+				CC27FF7520C2541A00574A04 /* Device.swift in Sources */,
+				CC27FF7620C2541A00574A04 /* DeviceType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC27FF6D20C253DD00574A04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC27FF6620C253DD00574A04 /* Device */;
+			targetProxy = CC27FF6C20C253DD00574A04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		C7FE68B320C13B0F004D3C33 /* Main.storyboard */ = {
@@ -299,6 +407,7 @@
 		C7FE68BF20C13B0F004D3C33 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYFVDC483X;
@@ -317,6 +426,7 @@
 		C7FE68C020C13B0F004D3C33 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KYFVDC483X;
@@ -329,6 +439,62 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CC27FF7020C253DD00574A04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KYFVDC483X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Device/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wu.-.Device";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		CC27FF7120C253DD00574A04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KYFVDC483X;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Device/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wu.-.Device";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -349,6 +515,15 @@
 			buildConfigurations = (
 				C7FE68BF20C13B0F004D3C33 /* Debug */,
 				C7FE68C020C13B0F004D3C33 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC27FF7220C253DD00574A04 /* Build configuration list for PBXNativeTarget "Device" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC27FF7020C253DD00574A04 /* Debug */,
+				CC27FF7120C253DD00574A04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
