@@ -25,6 +25,9 @@ import UIKit
     case iPhone8
     case iPhone8Plus
     case iPhoneX
+    case iPhoneXR
+    case iPhoneXS
+    case iPhoneXSMax
     
     //MARK: - iPad
     case iPad1

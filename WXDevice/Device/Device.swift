@@ -67,6 +67,9 @@ class Device: NSObject {
         case "iPhone10,1", "iPhone10,4":                 return .iPhone8
         case "iPhone10,2", "iPhone10,5":                 return .iPhone8Plus
         case "iPhone10,3", "iPhone10,6":                 return .iPhoneX
+        case "iPhone11,8":                               return .iPhoneXR
+        case "iPhone11,2":                               return .iPhoneXS
+        case "iPhone11,4", "iPhone11,6":                 return .iPhoneXSMax
         
         //iPad
         case "iPad1,1":                                  return .iPad1
