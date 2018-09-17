@@ -35,7 +35,7 @@ Device.isRetina()
 ##### 1. carthage
 
 ```
-github "supergithuber/Device" == 0.7.2
+github "supergithuber/Device" ~> 0.7.2
 ```
 
 ##### 2. drag source file to your project
