@@ -11,25 +11,25 @@ import UIKit
 class Device: NSObject {
     
     //MARK: - public
-    static open func model() -> DeviceModel{
+    static public func model() -> DeviceModel{
         return getDevice(versionCode: getDeviceCode())
     }
-    static open func type() -> DeviceType{
+    static public func type() -> DeviceType{
         return getDeviceType(versionCode: getDeviceCode())
     }
-    static open func isRetina() -> Bool{
+    static public func isRetina() -> Bool{
         return UIScreen.main.scale > 1.0
     }
-    static open func isiPhone() -> Bool{
+    static public func isiPhone() -> Bool{
         return type() == .iPhone
     }
-    static open func isiPad() -> Bool{
+    static public func isiPad() -> Bool{
         return type() == .iPad
     }
-    static open func isiPod() -> Bool{
+    static public func isiPod() -> Bool{
         return type() == .iPod
     }
-    static open func isSimulator() -> Bool{
+    static public func isSimulator() -> Bool{
         return type() == .simulator
     }
     

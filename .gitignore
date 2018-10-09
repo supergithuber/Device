@@ -43,9 +43,10 @@ Pods/
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
-Carthage/Checkouts
 .resolved
-Carthage/Build
+Carthage/carthage_core/Carthage
+Carthage/carthage_foundation/Carthage
+Carthage/carthage_github/Carthage
 
 ### Objective-C Patch ###
 *.xcscmblueprint
@@ -131,6 +132,8 @@ playground.xcworkspace
 #
 # Pods/
 
+sourcery/source/Pods
+
 # Carthage
 #
 # Add this line if you want to avoid checking in source code from Carthage dependencies.
@@ -149,3 +152,7 @@ fastlane/report.xml
 fastlane/Preview.html
 fastlane/screenshots
 fastlane/test_output
+
+#translate
+Tool/
+update_localized.sh
