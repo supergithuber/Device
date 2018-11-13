@@ -86,6 +86,8 @@ class Device: NSObject {
         case "iPad6,7", "iPad6,8", "iPad7,1", "iPad7,2": return .iPadPro12_9Inch
         case "iPad7,3", "iPad7,4":                       return .iPadPro10_5Inch
         case "iPad6,3", "iPad6,4":                       return .iPadPro9_7Inch
+        case "iPad8,1", "iPad8,2", "iPad8,3", "iPad8,4": return .iPadProFaceID11Inch
+        case "iPad8,5", "iPad8,6", "iPad8,7", "iPad8,8": return .iPadProFaceID12_9Inch
         
         //iPod
         case "iPod1,1":                                  return .iPodTouch1Gen

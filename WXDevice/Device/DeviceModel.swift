@@ -5,7 +5,8 @@
 //  Created by wuxi on 2018/4/2.
 //  Copyright © 2018年 Wuxi. All rights reserved.
 //
-
+// 查询device code
+// https://gist.github.com/adamawolf/3048717
 import UIKit
 
 @objc public enum DeviceModel: Int {
@@ -44,6 +45,8 @@ import UIKit
     case iPadPro9_7Inch
     case iPadPro10_5Inch
     case iPadPro12_9Inch
+    case iPadProFaceID11Inch
+    case iPadProFaceID12_9Inch
     
     //MARK: - iPod
     case iPodTouch1Gen
